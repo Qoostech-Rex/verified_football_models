@@ -8,7 +8,7 @@ import sys
 import pickle
 import numpy as np
 
-MODEL_PATH = '/root/.openclaw/workspace/projects/football-analysis/models/usa_nwsl_combined.pkl'
+MODEL_PATH = '/root/.openclaw/workspace/projects/verified_models/models/usa_nwsl_combined.pkl'
 
 # === USA NWSL TEAM ID MAPPING ===
 TEAM_NAMES = {

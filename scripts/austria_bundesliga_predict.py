@@ -11,7 +11,7 @@ import pymysql
 import pandas as pd
 import numpy as np
 
-WORK_DIR = '/root/.openclaw/workspace/projects/football-analysis/'
+WORK_DIR = '/root/.openclaw/workspace/projects/verified_models/'
 MODEL_DIR = os.path.join(WORK_DIR, 'models/')
 
 EVENT_TYPE_ID = '0ffdf60cd8d84b75a91b45db09c32370'

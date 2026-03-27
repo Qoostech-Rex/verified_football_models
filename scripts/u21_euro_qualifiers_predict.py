@@ -111,7 +111,7 @@ def predict(event_id: str) -> dict:
         }
     """
     # Load model
-    with open('/root/.openclaw/workspace/projects/football-analysis/models/u21_euro_qualifiers_combined.pkl', 'rb') as f:
+    with open('/root/.openclaw/workspace/projects/verified_models/models/u21_euro_qualifiers_combined.pkl', 'rb') as f:
         model_data = pickle.load(f)
     
     model = model_data['model']

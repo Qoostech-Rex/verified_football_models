@@ -34,7 +34,7 @@ def predict(event_id: str) -> dict:
     from sklearn.preprocessing import StandardScaler
     
     # Load window models
-    with open('/root/.openclaw/workspace/projects/football-analysis/models/mexico_liga_mx_window_models.pkl', 'rb') as f:
+    with open('/root/.openclaw/workspace/projects/verified_models/models/mexico_liga_mx_window_models.pkl', 'rb') as f:
         window_models = pickle.load(f)
     
     # Database connection

@@ -9,7 +9,7 @@ import pickle
 import pandas as pd
 import numpy as np
 
-MODEL_PATH = '/root/.openclaw/workspace/projects/football-analysis/models/wc_africa_qualifiers.pkl'
+MODEL_PATH = '/root/.openclaw/workspace/projects/verified_models/models/wc_africa_qualifiers.pkl'
 
 def predict(event_id: str) -> dict:
     """

@@ -174,7 +174,7 @@ def predict(event_id: str) -> dict:
         }
     """
     # Load model
-    with open('/root/.openclaw/workspace/projects/football-analysis/models/qatar_combined_overunder.pkl', 'rb') as f:
+    with open('/root/.openclaw/workspace/projects/verified_models/models/qatar_combined_overunder.pkl', 'rb') as f:
         model_pkg = pickle.load(f)
     
     model = model_pkg['model']
@@ -183,7 +183,7 @@ def predict(event_id: str) -> dict:
     features_list = model_pkg['features']
     
     # Load historical data for feature computation
-    historical_df = pd.read_csv('/root/.openclaw/workspace/projects/football-analysis/data_qatar_enhanced.csv')
+    historical_df = pd.read_csv('/root/.openclaw/workspace/projects/verified_models/data_qatar_enhanced.csv')
     historical_df['start_time'] = pd.to_datetime(historical_df['start_time'])
     
     # Get features for this event

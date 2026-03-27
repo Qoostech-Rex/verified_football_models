@@ -10,7 +10,7 @@ import pandas as pd
 import numpy as np
 import pymysql
 
-MODEL_PATH = '/root/.openclaw/workspace/projects/football-analysis/models/turkey_combined_overunder.pkl'
+MODEL_PATH = '/root/.openclaw/workspace/projects/verified_models/models/turkey_combined_overunder.pkl'
 
 def get_latest_odds(event_id, conn):
     """Fetch latest odds for an event"""

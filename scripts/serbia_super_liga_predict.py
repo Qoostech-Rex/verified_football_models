@@ -226,7 +226,7 @@ def predict(event_id: str) -> dict:
     """
     
     # Load models
-    models_path = '/root/.openclaw/workspace/projects/football-analysis/models/serbia_super_liga_combined_ou_models.pkl'
+    models_path = '/root/.openclaw/workspace/projects/verified_models/models/serbia_super_liga_combined_ou_models.pkl'
     with open(models_path, 'rb') as f:
         window_models = pickle.load(f)
     
@@ -254,7 +254,7 @@ def predict(event_id: str) -> dict:
     model_data = window_models[window_key]
     
     # Load historical data for feature engineering
-    historical_df = pd.read_pickle('/root/.openclaw/workspace/projects/football-analysis/reports/serbia_super_liga_enhanced_data.pkl')
+    historical_df = pd.read_pickle('/root/.openclaw/workspace/projects/verified_models/reports/serbia_super_liga_enhanced_data.pkl')
     
     # Engineer features
     features = engineer_features(event, historical_df)

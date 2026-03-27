@@ -21,8 +21,8 @@ import pymysql
 from datetime import datetime
 
 # Paths
-MODEL_PATH = '/root/.openclaw/workspace/projects/football-analysis/models/bundesliga_results.pkl'
-DATA_PATH = '/root/.openclaw/workspace/projects/football-analysis/models/bundesliga_enhanced.pkl'
+MODEL_PATH = '/root/.openclaw/workspace/projects/verified_models/models/bundesliga_results.pkl'
+DATA_PATH = '/root/.openclaw/workspace/projects/verified_models/models/bundesliga_enhanced.pkl'
 
 def get_event_features(event_id: str) -> dict:
     """

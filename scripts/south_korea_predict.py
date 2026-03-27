@@ -8,7 +8,7 @@ import sys
 import pickle
 import os
 
-WORK_DIR = '/root/.openclaw/workspace/projects/football-analysis'
+WORK_DIR = '/root/.openclaw/workspace/projects/verified_models'
 MODEL_PATH = f'{WORK_DIR}/models/south_korea_wk_league_combined_model.pkl'
 
 def predict(event_id: str) -> dict:

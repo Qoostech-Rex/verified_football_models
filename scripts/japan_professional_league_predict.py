@@ -12,7 +12,7 @@ import pymysql
 from datetime import datetime
 from sklearn.preprocessing import LabelEncoder
 
-MODEL_PATH = '/root/.openclaw/workspace/projects/football-analysis/models/japan_professional_league_combined.pkl'
+MODEL_PATH = '/root/.openclaw/workspace/projects/verified_models/models/japan_professional_league_combined.pkl'
 
 def load_model():
     with open(MODEL_PATH, 'rb') as f:

@@ -11,7 +11,7 @@ import numpy as np
 import pymysql
 from datetime import datetime
 
-MODEL_PATH = '/root/.openclaw/workspace/projects/football-analysis/models/england_league_trophy_combined.pkl'
+MODEL_PATH = '/root/.openclaw/workspace/projects/verified_models/models/england_league_trophy_combined.pkl'
 
 def get_season(dt):
     if dt.month >= 8: return f"{dt.year}-{dt.year+1}"

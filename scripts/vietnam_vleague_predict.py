@@ -9,8 +9,8 @@ import pickle
 import pandas as pd
 import numpy as np
 
-MODEL_PATH = '/root/.openclaw/workspace/projects/football-analysis/models/vietnam_vleague_combined.pkl'
-DATA_PATH = '/root/.openclaw/workspace/projects/football-analysis/models/vietnam_vleague_data.pkl'
+MODEL_PATH = '/root/.openclaw/workspace/projects/verified_models/models/vietnam_vleague_combined.pkl'
+DATA_PATH = '/root/.openclaw/workspace/projects/verified_models/models/vietnam_vleague_data.pkl'
 
 def load_model():
     with open(MODEL_PATH, 'rb') as f:
